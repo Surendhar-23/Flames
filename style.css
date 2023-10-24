@@ -33,9 +33,18 @@ section {
 }
 
 .title h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
+.title h1::first-letter {
+  font-size: 6rem;
+  color: rgb(239, 54, 153);
+}
+
+h1 img {
+  width: 150px;
+  height: 50px;
+}
 .inputcontainer {
   width: 100%;
   margin-bottom: 2rem;
@@ -43,12 +52,12 @@ section {
 
 .inputcontainer input {
   width: 100%;
-  border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
+  border-radius: 1rem;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 2.5rem;
   font-size: 1.8rem;
   outline: none;
-  border: #777 solid;
+  border: 2px #777 solid;
 }
 
 .submit-btn {
@@ -58,13 +67,17 @@ section {
 .submit-btn .btn {
   color: #fff;
   font-weight: 700;
+  font-size: 2rem;
   border: none;
   padding: 0.4rem 1rem;
   background: linear-gradient(to right, #00ff87, #60efff);
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 1rem;
 }
 
+.btn:hover {
+  background: linear-gradient(to left, #00ff87, #60efff);
+}
 /* Result */
 
 .imagecon {
