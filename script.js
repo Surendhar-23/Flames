@@ -128,7 +128,12 @@ let check = function () {
   set(
     ref(
       db,
-      "user/" + s1[0] + s1[s1.length - 1] + s2[0] + s2[s2.length - 1] + x
+      "user/" +
+        p1.charAt(0) +
+        p1.charAt(p1.length - 1) +
+        p2.charAt(0) +
+        p2.charAt(p2.length - 1) +
+        x
     ),
     {
       Person_1: input1.value,
